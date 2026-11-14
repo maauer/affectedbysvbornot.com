@@ -16,6 +16,25 @@ Contribute to the project via [https://github.com/ghuntley/affectedbysvbornot.co
 
 # Companies affected
 
+Below you will find companies who have publically (or privately with citations) revealed that they have been affected by the collapse of SVB. There are tens of thousands to hundreds(?) of thousands of companies affected as revealed by this Google Dork.
+
+[https://t.co/emOPKUnJaa](https://t.co/emOPKUnJaa)
+
+>
+> The query pulls back documents containing an #SVB routing or swift number + an @SVB_Financial account number.
+>
+> The name of the business tied to the SVB account number is usually within 100 characters of the account number and typically labeled "beneficiary" or "for credit of" (or some close variation on those themes).
+>
+> In edge cases where a company name is not found near the account number, the account holder is often the source/author of the document, e.g., 
+ 
+[http://bit.ly/svb-invoice-example](http://bit.ly/svb-invoice-example).
+
+> Google only returns 1000 results for any given query - so retrieving the entire results set would require narrowing each query's scope and then iterating through the targets at a finer granularity. 
+> 
+> For example, the current query looks for account numbers matching 33********. Replacing that with 33**NN****, where NN is 01-99  would let you iterate through ranges of account numbers  (33**01****, 33**02****, and so on...).
+>
+> Other approaches include geographically scoping the queries by adding "AND NJ" to queries (and iterating through each two-byte state code) or tacking on partial zip codes, etc...
+
 --- table ---
 
 class: [affected-table, table]
@@ -38,7 +57,7 @@ data:
   sec_filing: SEC Filing
   citations: Citations
   exposure_level: Exposure Level
-
+  
 - company_name: "Camp"
   amount_of_employees: "unknown"
   website_url: "[https://camp.com](https://camp.com)"
@@ -47,6 +66,34 @@ data:
   sec_filing: "n/a"
   citations: |
              [BANKRUN](./citations/camp.png) promotion code.           
+  exposure_level: "unknown"
+
+- company_name: "Chargebee"
+  amount_of_employees: "1000"
+  website_url: "[https://www.chargebee.com/](https://www.chargebee.com/)"
+  official_statement: "n/a"
+  sec_filing: "n/a"
+  citations: |
+             ["Chargebee requests that you do not send payments to our SVB account" email sent to customers](./citations/chargebee.png)
+  exposure_level: "unknown"
+
+- company_name: "Circle"
+  amount_of_employees: "unknown"
+  website_url: "[https://circle.com](https://circle.com)"
+  official_statement: |
+             [Silicon Valley Bank is one of six banking partners Circle uses for managing the ~25%  portion of USDC reserves held in cash.](./citations/circle.png) - [Twitter Link](https://twitter.com/circle/status/1634341007306248199)
+  sec_filing: "n/a"
+  citations: |
+             [Official Twitter statement](https://twitter.com/circle/status/1634341007306248199)           
+  exposure_level: "unknown"
+
+- company_name: "CostPlusDrugs"
+  amount_of_employees: "unknown"
+  website_url: "[https://CostsPlusDrugs.com](https://CostsPlusDrugs.com)"
+  official_statement: ""
+  sec_filing: "n/a"
+  citations: |
+             [CostsPlus Drugs.com deals with SVB. So we had, I think we had 3.1 million in there](https://www.thestreet.com/technology/mark-cuban-had-millions-at-failed-silicon-valley-bank)           
   exposure_level: "unknown"
 
 - company_name: "Etsy"
@@ -67,6 +114,15 @@ data:
              [An email from account managers sent to Fastlys customers](./citations/fastly.jpeg). Our payment instructions have changed. Effective immediately, please cease sending payments to our Silicon Valley Bank (SVB) Account and direct all payments to the following account at JP Morgan Chase.
   exposure_level: "unknown"
 
+- company_name: "Juniper Networks"
+  amount_of_employees: "10901"
+  website_url: "[https://www.juniper.net/](https://www.juniper.net/)"
+  official_statement: "Juniper loss as of result of SVB receivership is immaterial - Reuters" 
+  sec_filing: "n/a"
+  citations: |
+             [JUNIPER NETWORKS INC - MAINTAINS OPERATING ACCOUNTS AT SVB WITH MINIMAL CASH BALANCE OF LESS THAN 1% OF TOTAL CASH, CASH EQUIVALENTS AND INVESTMENTS](https://kalkinemedia.com/us/tech-corner/tech-news/brief-juniper-networks-inc-maintains-operating-accounts-at-svb-with-minimal-cash-balance)
+  exposure_level: "unknown"
+
 - company_name: "KeyboardIO"
   amount_of_employees: "15"
   website_url: "[https://shop.keyboard.io/](https://shop.keyboard.io/)"
@@ -85,6 +141,31 @@ data:
             [SF payroll firm Rippling has to delay payouts after Silicon Valley Bank collapse](https://www.sfgate.com/tech/article/rippling-pay-silicon-valley-bank-17832441.php)
   exposure_level: "unknown"
 
+
+- company_name: "Roblox"
+  amount_of_employees: "2100"
+  website_url: "[https://www.roblox.com/](https://www.roblox.com/)"
+  official_statement: "approximately 5% of its $3 billion cash and securities balance was held at SVB as of Feb. 28, 2023" 
+  sec_filing: "[https://d18rn0p25nwr6d.cloudfront.net/CIK-0001315098/05c0fe85-052c-4786-980c-7bdf467f8258.pdf](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001315098/05c0fe85-052c-4786-980c-7bdf467f8258.pdf)"
+  citations: ""
+  exposure_level: "unknown"
+
+- company_name: "Rocket Lab USA"
+  amount_of_employees: "1300"
+  website_url: "[https://www.rocketlabusa.com/](https://www.rocketlabusa.com/)"
+  official_statement: "Rocket Lab USA said it had $38 million in cash, or 7.9% of its total cash as of Dec. 31, 2022, with SVB" 
+  sec_filing: "[https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819994/b644cf38-1413-43b7-bdb7-a0292b3ac1b3.pdf](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001819994/b644cf38-1413-43b7-bdb7-a0292b3ac1b3.pdf)"
+  citations: ""
+  exposure_level: "unknown"
+
+- company_name: "Roku"
+  amount_of_employees: "3000"
+  website_url: "[https://www.roku.com/](https://www.roku.com/)"
+  official_statement: "At this time, the Company does not know to what extent the Company will be able to recover its cash on deposit at SVB" 
+  sec_filing: "[https://www.sec.gov/ix?doc=/Archives/edgar/data/1428439/000142843923000010/wk-20230310.htm](https://www.sec.gov/ix?doc=/Archives/edgar/data/1428439/000142843923000010/wk-20230310.htm)"
+  citations: ""
+  exposure_level: "unknown"
+
 - company_name: "Strongsuit"
   amount_of_employees: "unknown"
   website_url: "[https://www.strongsuit.co/](https://www.strongsuit.co/)"
@@ -92,6 +173,30 @@ data:
   sec_filing: "n/a"
   citations: |
              [A tweet from the company founder](https://twitter.com/lcmichaelides/status/1634654751479541760?s=20)
+  exposure_level: "unknown"
+
+- company_name: "SoFi"
+  amount_of_employees: "unknown"
+  website_url: "[https://www.sofi.com/](https://www.sofi.com/)"
+  official_statement: "We have no assets with SVB. Our only exposure is a very small lending facility that is provided to us for less than $40m which is unaffected by the FDIC’s receivership of Silicon Valley Bank. Your money is safe with SoFi." 
+  sec_filing: "[https://twitter.com/SoFi/status/1634269534604472321](https://twitter.com/SoFi/status/1634269534604472321)"
+  citations: ""
+  exposure_level: "unknown"
+
+- company_name: "Perplexity AI"
+  amount_of_employees: "unknown"
+  website_url: "[https://www.perplexity.ai/](https://www.perplexity.ai/)"
+  official_statement: "We use SVB for @perplexity_ai and were impacted by the recent events. Thanks to @natfriedman for stepping forward to help us with emergency funding on real short notice. Fortunate to be working with him!" 
+  sec_filing: ""
+  citations: "[Tweet by the founder](https://twitter.com/AravSrinivas/status/1634738893303189505)."
+  exposure_level: "unknown"
+
+- company_name: "Vimeo"
+  amount_of_employees: "1300"
+  website_url: "[https://www.vimeo.com/](https://www.vimeo.com/)"
+  official_statement: "The company believes it does not have exposure to any liquidity concern at SVB. The Company has a well structured and diverse set of banking partners with no bank holding over 25% of its total cash" 
+  sec_filing: "[https://investors.vimeo.com/static-files/e2ef741c-1688-48a3-8b4e-1c12e87d2a91](https://investors.vimeo.com/static-files/e2ef741c-1688-48a3-8b4e-1c12e87d2a91)"
+  citations: ""
   exposure_level: "unknown"
 
 --- /table ---
@@ -112,8 +217,15 @@ data:
   company_name: Company Name
   official_statement: Official Statement
 
+- company_name: "fuboTV"
+  official_statement: "[We do not hold any deposit or have any investments at SVB](https://www.sec.gov/ix?doc=/Archives/edgar/data/1484769/000149315223007280/form8-k.htm)"
+
+
 - company_name: "Gusto"
   official_statement: "[We do not use SVB](https://twitter.com/lawtraveler/status/1634771841545031680)"
+
+- company_name: "Groundfloor"
+  official_statement: "[Groundfloor's primary banking relationship is with Truist](https://github.com/ghuntley/affectedbysvbornot.com/issues/16)"
 
 - company_name: "Qovery"
   official_statement: "[It's a sad day for the startup ecosystem! While there is no direct impact on Qovery](https://twitter.com/rophilogene/status/1634597792495681537)"
@@ -147,9 +259,10 @@ data:
 
 # Recommended Reading / Watching
 
+- [SEC Filings containing the letters 'SVB'](https://www.sec.gov/edgar/search/#/q=SVB&dateRange=custom&category=custom&startdt=2020-03-01&enddt=2023-03-12&forms=8-K)
 - [FDIC Statement: Failed Bank Information for Silicon Valley Bank, Santa Clara, CA](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/silicon-valley.html)
 - [The All In Podcast: Slides explaining how SVB Happened](https://twitter.com/markjeffrey/status/1634673778302259200)
-
+- [Thousands of startups and hundreds of thousands of startup jobs are at risk](https://www.ycombinator.com/blog/urgent-sign-the-petition-now-thousands-of-startups-and-hundreds-of-thousands-of-startup-jobs-are-at-risk)
 
 # About this website
 
